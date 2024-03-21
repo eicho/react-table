@@ -1,0 +1,109 @@
+body {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Manrope", sans-serif;
+}
+
+.table-container {
+  overflow-x: auto;
+  color: #1f2937;
+  max-width: 870px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px 0;
+  text-align: left;
+  border-bottom: 1px solid #d1d5db;
+}
+
+th {
+  font-weight: 800;
+  padding: 0 4px;
+  padding: 4px 16px;
+}
+
+thead tr {
+  border-bottom: 2px solid #000;
+}
+
+tbody tr:nth-child(4n + 1),
+tbody tr:nth-child(4n + 2) {
+  background-color: #e5e7eb;
+}
+
+tbody tr:nth-child(4n + 3),
+tbody tr:nth-child(4n + 4) {
+  background-color: #f3f4f6;
+}
+
+.sub-item {
+  padding: 4px 16px;
+}
+
+.row-header {
+  display: none;
+}
+
+.divider {
+  border-top: 1px solid #d1d5db;
+}
+
+.team {
+  font-weight: bold;
+  color: #000;
+  padding: 0 16px;
+}
+
+.row-header td {
+  padding: 4px 16px;
+}
+
+.time-start,
+.time-end {
+  padding: 4px 10px 6px 10px;
+  background: #4b5563;
+  color: #fff;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.time-start {
+  margin-right: 8px;
+}
+
+.time-end {
+  margin-left: 8px;
+}
+
+@media (max-width: 1440px) {
+  th:nth-child(1),
+  td:nth-child(1) {
+    display: none;
+  }
+
+  .row-header {
+    display: table-row !important;
+  }
+
+  .row-header td {
+    border-bottom: none;
+  }
+  .team {
+    padding: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .time-start,
+  .time-end {
+    margin: 0;
+  }
+}
